@@ -2,4 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: normal;
+    color: red;
+}
+
+body {
+    background-image: url(../img/bg-fog-tree.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200vh;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+}
+
+header .fa-phone,
+header .fa-phone-alt {
+    font-size: 30px;
+    flex-basis: 20%;
+    text-align: right;
+}
+
+header .fa-phone-alt {
+    text-align: left;
+}
+
+header>h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    flex-basis: 60%;
+}
+
+header .fa-envelope {
+    flex-basis: 15%;
+    text-align: right;
+    font-size: 18px;
+
+}
+
+header .right {
+    text-align: left;
+
+}
+
+header h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    flex-basis: 70%;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.myPhoto {
+    height: 280px;
+    width: 280px;
+    margin: 0 auto;
+    background-image: url(../img/my-photo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    box-shadow: 0 0 0.5em gold;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: bold;
+    margin-bottom: 25px;
+}
+
+.shortAbout {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    text-align: justify;
 }
