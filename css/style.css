@@ -141,7 +141,7 @@ header a {
 article .singleCourse {
     position: relative;
     height: auto;
-
+    padding-bottom: 15px;
 }
 
 article .date {
@@ -150,7 +150,7 @@ article .date {
 }
 
 article .description {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: left;
     color: lightgreen;
     font-size: 16px;
@@ -165,7 +165,7 @@ article .organizer {
 article .organizer-logo {
     display: inline-block;
     background-image: url(../img/akademia108_logo_mob.png);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 30%;
     height: 75px;
