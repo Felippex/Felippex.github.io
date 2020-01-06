@@ -93,3 +93,38 @@ header a {
     margin: 0 auto 20px auto;
     text-align: justify;
 }
+
+/* activities section */
+
+.activities {
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-activities {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activities h3 {
+    font-size: 30px;
+    flex-basis: 90%;
+}
+
+.in-activities .show {
+    flex-basis: 10%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.in-activities article {
+    flex-basis: 100%;
+    margin: 10px 0;
+    display: none;
+}
+
+.in-activities .active {
+    display: block;
+}
