@@ -21,11 +21,11 @@ header {
 }
 
 header h1 {
-    text-align: center;
+    flex-basis: 100%;
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 20px;
-    flex-basis: 100%;
+    text-align: center;
 }
 
 header .fa-phone,
@@ -35,21 +35,21 @@ header .fa-phone-alt {
     text-align: right;
 }
 
-header .fa-phone-alt {
+header .fa-phone {
     text-align: left;
 }
 
 header>h2 {
-    text-align: center;
+    flex-basis: 60%;
     font-size: 30px;
     margin-bottom: 20px;
-    flex-basis: 60%;
+    text-align: center;
 }
 
 header .fa-envelope {
     flex-basis: 15%;
-    text-align: right;
     font-size: 18px;
+    text-align: right;
 
 }
 
@@ -59,10 +59,10 @@ header .right {
 }
 
 header h3 {
-    text-align: center;
+    flex-basis: 70%;
     font-size: 18px;
     margin-bottom: 20px;
-    flex-basis: 70%;
+    text-align: center;
 }
 
 header a {
@@ -70,28 +70,37 @@ header a {
 }
 
 .myPhoto {
-    height: 280px;
-    width: 280px;
-    margin: 0 auto;
     background-image: url(../img/my-photo.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
     background-position: 50% 0%;
-    box-shadow: 0 0 0.5em gold;
+    background-repeat: no-repeat;
+    background-size: 100%;
     border-radius: 50%;
+    box-shadow: 0 0 0.5em gold;
+    height: 280px;
+    margin: 0 auto;
     margin-bottom: 30px;
+    width: 280px;
+}
+
+.about {
+    background-attachment: fixed;
+    background-image: url(../img/bg-fog-tree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about h2 {
-    text-align: center;
+    color: black;
     font-size: bold;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .shortAbout {
-    width: 90%;
+    color: green;
     margin: 0 auto 20px auto;
     text-align: justify;
+    width: 90%;
 }
 
 /* activities section */
@@ -108,6 +117,7 @@ header a {
     flex-wrap: wrap;
     padding: 5px 0;
     position: relative;
+    border-bottom: 1px solid white;
 }
 
 .activities h3 {
@@ -124,17 +134,14 @@ header a {
 
 .in-activities article {
     flex-basis: 100%;
-    overflow: hidden;
-    height: 0;
-    transition: 0.2s linear;
-
-
-}
-
-.in-activities .active {
+    display: none;
     margin: 10px 0;
-    height: 180px;
+
 }
+
+/* active class means that element slided down - from height 0 to set. How no to limit height od the section??? */
+/* .in-activities .active {
+} */
 
 /* text in articles */
 
@@ -174,10 +181,10 @@ article .organizer-logo {
     right: 0;
 }
 
-article:after {
+.courses article:after {
     content: "";
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 50px auto 0 auto;
     width: 80%;
     height: 2px;
     background-color: blue;
