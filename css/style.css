@@ -74,7 +74,7 @@ header a {
 .myPhoto {
     background-image: url(../img/my-photo.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     border-radius: 50%;
     box-shadow: 0 0 0.5em gold;
     height: 280px;
@@ -107,23 +107,23 @@ header a {
     padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    background-color: cadetblue;
 
 }
 
 .in-activities {
-    flex-basis: 100%;
+    border-bottom: 1px solid white;
     display: flex;
+    flex-basis: 100%;
     flex-wrap: wrap;
     padding: 5px 0;
     position: relative;
-    border-bottom: 1px solid white;
 }
 
 .activities h3 {
-    text-transform: uppercase;
-    font-size: 26px;
     flex-basis: 90%;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
 .in-activities .show {
@@ -148,17 +148,13 @@ header a {
     transform: rotate(180deg);
 }
 
-/* active class means that element slided down - from height 0 to set. How no to limit height od the section??? */
-/* .in-activities .active {
-} */
-
 /* text in articles */
 
 article .singleCourse {
-    position: relative;
     height: auto;
-    padding-bottom: 15px;
     margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
 }
 
 article .date {
@@ -168,26 +164,20 @@ article .date {
 
 article .description,
 .companyName {
+    color: darkred;
+    font-size: 16px;
     margin-top: 20px;
     text-align: left;
-    color: lightgreen;
-    font-size: 16px;
 }
 
 article .organizer,
 .jobPosition {
-    text-align: left;
     font-size: 14px;
     margin-top: 5px;
+    text-align: left;
 }
 
 article .organizerLogo {
-    /* display: inline-block; */
-    /* background-image: url(../img/akademia108_logo_mob.png); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* width: 30%; */
-    /* height: 75px; */
     position: absolute;
     bottom: 30%;
     right: 0;
@@ -195,17 +185,19 @@ article .organizerLogo {
 }
 
 .courses .singleCourse:after {
+    background-color: blue;
     content: "";
     display: block;
+    height: 2px;
     margin: 50px auto 0 auto;
     width: 80%;
-    height: 2px;
-    background-color: blue;
 }
 
+/* experience */
+
 .responsibilities {
-    margin-top: 5px;
     list-style-position: outside;
+    margin-top: 5px;
     padding-left: 30px;
 }
 
@@ -213,6 +205,48 @@ article .organizerLogo {
     color: yellow;
     text-align: justify;
 
+}
+
+/* education */
+.singleMajor {
+    text-align: center;
+}
+
+.singleMajor .date {
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.singleMajor p {
+    margin-bottom: 15px;
+}
+
+.singleMajor .university {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.singleMajor .faculty {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.singleMajor .major {
+    margin-bottom: 5px;
+}
+
+.singleMajor .level:after {
+    background-color: blue;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 20px auto 0 auto;
+    width: 80%;
+}
+
+.singleMajor img {
+    width: 40%;
+    margin: 10px 0;
 }
 
 .abilities article {
