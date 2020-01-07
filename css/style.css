@@ -8,9 +8,11 @@
 }
 
 body {
-    background-color: black;
-    background-size: cover;
+    background-image: url(../img/bg-fog-tree.jpg);
+    /* background-size: cover; */
+    background-position: 60% 80%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -71,7 +73,6 @@ header a {
 
 .myPhoto {
     background-image: url(../img/my-photo.jpg);
-    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 50%;
@@ -83,10 +84,7 @@ header a {
 }
 
 .about {
-    background-attachment: fixed;
-    background-image: url(../img/bg-fog-tree.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: darkgreen;
 }
 
 .about h2 {
@@ -97,7 +95,7 @@ header a {
 }
 
 .shortAbout {
-    color: green;
+    color: white;
     margin: 0 auto 20px auto;
     text-align: justify;
     width: 90%;
@@ -106,9 +104,11 @@ header a {
 /* activities section */
 
 .activities {
-    margin: 0 10px;
+    padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
+    background-color: red;
+
 }
 
 .in-activities {
@@ -139,6 +139,15 @@ header a {
 
 }
 
+.fa-caret-down {
+    transition: 0.3s;
+}
+
+/* class for rotate fa object */
+.rotate {
+    transform: rotate(180deg);
+}
+
 /* active class means that element slided down - from height 0 to set. How no to limit height od the section??? */
 /* .in-activities .active {
 } */
@@ -149,6 +158,7 @@ article .singleCourse {
     position: relative;
     height: auto;
     padding-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 article .date {
@@ -156,32 +166,35 @@ article .date {
 
 }
 
-article .description {
-    margin-top: 30px;
+article .description,
+.companyName {
+    margin-top: 20px;
     text-align: left;
     color: lightgreen;
     font-size: 16px;
 }
 
-article .organizer {
+article .organizer,
+.jobPosition {
     text-align: left;
     font-size: 14px;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
-article .organizer-logo {
-    display: inline-block;
-    background-image: url(../img/akademia108_logo_mob.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30%;
-    height: 75px;
+article .organizerLogo {
+    /* display: inline-block; */
+    /* background-image: url(../img/akademia108_logo_mob.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* width: 30%; */
+    /* height: 75px; */
     position: absolute;
-    bottom: 0;
+    bottom: 30%;
     right: 0;
+    margin-right: 10px;
 }
 
-.courses article:after {
+.courses .singleCourse:after {
     content: "";
     display: block;
     margin: 50px auto 0 auto;
@@ -190,10 +203,30 @@ article .organizer-logo {
     background-color: blue;
 }
 
+.responsibilities {
+    margin-top: 5px;
+    list-style-position: outside;
+    padding-left: 30px;
+}
+
+.responsibilities li {
+    color: yellow;
+    text-align: justify;
+
+}
+
+.abilities article {
+    text-align: center;
+}
+
+.abilities img {
+    width: 30%;
+    margin: 8px 3px 10px 0;
+}
+
 /* footer  */
 footer {
-    margin-top: 30px;
-    padding: 10px 0;
+    padding: 15px 0;
     background-color: grey;
 }
 

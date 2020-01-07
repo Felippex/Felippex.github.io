@@ -18,10 +18,12 @@ $('.in-activities').each(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $('article', this).slideUp(300);
+            $('.fa-caret-down', this).removeClass('rotate')
 
         } else {
             $(this).addClass('active');
             $('article', this).slideDown(300);
+            $('.fa-caret-down', this).addClass('rotate')
         }
     })
 })
