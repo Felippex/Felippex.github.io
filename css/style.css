@@ -279,6 +279,29 @@ article .organizerLogo:nth-last-of-type(1) {
     margin: 8px 3px 10px 0;
 }
 
+/* interests */
+
+.interests article div {
+    width: 90%;
+    height: 200px;
+    background-size: cover;
+    margin: 0 auto 50px auto;
+}
+
+.firstInterest {
+    background-image: url(../img/czech-republic.jpg);
+}
+
+.secondInterest {
+    background-image: url(../img/stolowe-mountains.jpg);
+}
+
+.interests article .thirdInterest {
+    transform: rotate(-90deg);
+    background-image: url(../img/dog-running.jpg);
+
+}
+
 /* footer  */
 footer {
     padding: 15px 0;
