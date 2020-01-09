@@ -33,11 +33,10 @@ let upDiv = document.querySelector('.upDiv');
 
 window.addEventListener('scroll', function () {
     let scrollValue = document.documentElement.scrollTop;
-    if (scrollValue > 0) {
-        upDiv.style.display = 'block';
+    if (scrollValue > 150) {
+        upDiv.classList.add('show')
     } else {
-        upDiv.style.display = 'none';
-
+        upDiv.classList.remove('show')
     }
 })
 
