@@ -27,3 +27,42 @@ $('.in-activities').each(function () {
         }
     })
 })
+
+
+let upDiv = document.querySelector('.upDiv');
+
+window.addEventListener('scroll', function () {
+    let scrollValue = document.documentElement.scrollTop;
+    if (scrollValue > 0) {
+        upDiv.style.display = 'block';
+    } else {
+        upDiv.style.display = 'none';
+
+    }
+})
+
+$('.upDiv').click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, "slow");
+    return false;
+})
+
+
+
+// let upDiv = document.createElement('div');
+// let upIcon = document.createElement('i')
+// upIcon.setAttribute('class', 'fa fas-arrow-up')
+
+// upDiv.appendChild(upIcon);
+// upDiv.style.width = '40px'
+// upDiv.style.height = '40px'
+// upDiv.style.position = 'fixed';
+// upDiv.style.right = '5%';
+// upDiv.style.bottom = '2%';
+// upDiv.style.borderRadius = '50%';
+// upDiv.style.backgroundColor = 'red';
+// upIcon.style.color = 'white';
+// upIcon.style.fontSize = '15px';
+// header.appendChild(upDiv);
+// console.log(upDiv);
