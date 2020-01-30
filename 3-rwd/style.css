@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.picture {
+  background-image: url('obrazy/man-1.jpg');
+
+  height: 50vh;
+  background-size: cover;
+}
+
+p {
+  font-family: 'Verdana';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.first {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.second {
+  font-size: 32px;
+}
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  .picture {
+    background-image: url('obrazy/man-2.jpg');
+    height: 70vh;
+    background-size: cover;
+  }
+
+  .paragraphs {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: white;
+  }
+
+  p {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+@media(min-width: 1170px) {
+  .picture {
+    height: 100vh;
+  }
+
+  .paragraphs {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  p {
+    text-align: left;
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
