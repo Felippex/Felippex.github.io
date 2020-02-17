@@ -1,361 +1,427 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Saira';
-    font-weight: normal;
-    color: white;
-    font-size: 9px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira";
+  font-weight: normal;
+  color: white;
+  font-size: 9px;
 }
 
 header {
-    background-image: url(../img/bg-blue.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  background-image: url(../img/bg-blue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 30px;
 }
 
 header h1 {
-    color: black;
-    flex-basis: 100%;
-    font-weight: bold;
-    font-size: 3.6rem;
-    margin-bottom: 2rem;
-    text-align: center;
+  color: white;
+  flex-basis: 100%;
+  font-weight: bold;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-header a {
-    display: block;
-    flex-basis: 20%;
-    text-align: right;
-    height: 43px;
-    line-height: 54px;
-}
-
-header a:nth-of-type(2) {
-    text-align: left;
-}
-
-header .fa-phone,
-header .fa-phone-alt {
-    font-size: 3rem;
-    flex-basis: 20%;
-    text-align: right;
-}
-
-header .fa-phone {
-    text-align: left;
-}
-
-header>h2 {
-    flex-basis: 60%;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
+header .fa-phone-alt,
 header .fa-envelope {
-    flex-basis: 15%;
-    font-size: 1.8rem;
-    text-align: right;
-
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0 20px;
 }
 
-header .right {
-    text-align: left;
-
+header > h2 {
+  display: inline-block;
+  font-size: 2rem;
+  width: 80%;
+  margin-bottom: 15px;
 }
 
-header a:nth-last-of-type(1),
-header a:nth-last-of-type(2) {
-    flex-basis: 15%;
-    line-height: 30px;
-}
-
-header a:nth-last-of-type(1) {
-    text-align: left;
-}
-
-header h3 {
-    flex-basis: 70%;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-header a {
-    text-decoration: none;
-}
-
-.myPhoto {
-    background-image: url(../img/my-photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5%;
-    border: 1px solid blue;
-    height: 280px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 280px;
-}
-
-.about {
-    background-color: rgb(245, 181, 61);
-}
-
-.about h3 {
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 15px 0 20px 0;
-    text-align: center;
-}
-
-.about .shortAbout {
-    font-size: 1.6rem;
-}
-
-.shortAbout {
-    color: white;
-    margin: 0 auto 20px auto;
-    text-align: justify;
-    width: 90%;
-    line-height: 150%;
+header > h3 {
+  display: inline-block;
+  width: 80%;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 header .upDiv {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: red;
-    position: fixed;
-    bottom: -45px;
-    right: 10px;
-    transition: 0.3s;
-    z-index: 1000;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.8s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  position: fixed;
+  bottom: -45px;
+  right: 10px;
+  transition: 0.3s;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.myPhoto {
+  background-image: url(../img/my-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  border: 1px solid blue;
+  height: 280px;
+  margin: 0 auto;
+  width: 280px;
+}
+
+/* ----- about section ----- */
+
+.about {
+  background-color: rgb(245, 181, 61);
+}
+
+.about h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px 0 20px 0;
+  text-align: center;
+}
+
+.about .shortAbout {
+  font-size: 1.6rem;
+  color: white;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: justify;
+  width: 90%;
+  line-height: 150%;
+}
+
+.shortAbout strong {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 header .fa-arrow-up {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 2rem;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
 }
 
 header .upDiv.show {
-    bottom: 10px;
-    visibility: visible;
-    opacity: 1;
+  bottom: 10px;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* activities section */
 
 .activities {
-    padding: 0 10px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(76, 76, 238);
-
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(76, 76, 238);
 }
 
 .in-activities {
-    border-bottom: 3px solid white;
-    display: flex;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    padding: 5px 0;
-    position: relative;
+  border-bottom: 3px solid white;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  position: relative;
 }
 
 .activities h3 {
-    flex-basis: 90%;
-    font-size: 2.6rem;
-    text-transform: uppercase;
+  flex-basis: 90%;
+  font-size: 2.6rem;
+  text-transform: uppercase;
 }
 
 .in-activities .show {
-    flex-basis: 10%;
-    font-size: 2.6rem;
-    text-align: center;
+  flex-basis: 10%;
+  font-size: 2.6rem;
+  text-align: center;
 }
 
 .in-activities article {
-    flex-basis: 100%;
-    display: none;
-    margin: 10px 0;
-
+  flex-basis: 100%;
+  display: none;
+  margin: 10px 0;
 }
 
 .fa-caret-down {
-    transition: 0.3s;
-    font-size: 2.6rem;
+  transition: 0.3s;
+  font-size: 2.6rem;
 }
 
 /* class for rotate fa object */
 .rotate {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* text in articles */
 
 article .singleCourse {
-    height: auto;
-    margin-bottom: 10px;
-    padding-bottom: 15px;
-    position: relative;
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  position: relative;
 }
 
 article .date {
-    text-align: center;
-
+  text-align: center;
 }
 
 article .description,
 .companyName {
-    color: #000;
-    font-size: 1.6rem;
-    margin-top: 20px;
-    text-align: left;
+  color: #000;
+  font-size: 1.6rem;
+  margin-top: 20px;
+  text-align: left;
 }
 
 article .organizer,
 .jobPosition {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    text-align: left;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  text-align: left;
 }
 
 article .organizerLogo {
-    position: absolute;
-    bottom: 30%;
-    right: 0;
-    margin-right: 10px;
-}
-
-article .organizerLogo:nth-last-of-type(1) {
-    width: 30%;
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  margin-right: 10px;
+  width: auto;
 }
 
 .courses .singleCourse:after {
-    background-color: blue;
-    content: "";
-    display: block;
-    height: 2px;
-    margin: 50px auto 0 auto;
-    width: 80%;
+  background-color: blue;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 50px auto 0 auto;
+  width: 80%;
 }
 
 /* experience */
 
 .responsibilities {
-    list-style-position: outside;
-    margin-top: 5px;
-    padding-left: 30px;
+  list-style-position: outside;
+  margin-top: 5px;
+  padding-left: 30px;
 }
 
 .responsibilities li {
-    font-size: 1.2rem;
-    font-style: italic;
-    text-align: justify;
-
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: justify;
 }
 
 /* education */
 .singleMajor {
-    text-align: center;
+  text-align: center;
 }
 
 .date {
-    margin-top: 10px;
-    font-size: 2.2rem;
+  margin-top: 10px;
+  font-size: 2.2rem;
 }
 
 .singleMajor p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .singleMajor .major {
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-    color: #000;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: #000;
 }
 
 .singleMajor .level {
-    font-size: 2rem;
-    letter-spacing: 2px;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 .singleMajor .university {
-    margin-bottom: 5px;
-    font-size: 1.6rem;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
 }
 
 .singleMajor .faculty {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .singleMajor .faculty:after {
-    background-color: rgb(145, 30, 30);
-    content: "";
-    display: block;
-    height: 2px;
-    margin: 20px auto 0 auto;
-    width: 80%;
+  background-color: rgb(145, 30, 30);
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 20px auto 0 auto;
+  width: 80%;
 }
 
 .singleMajor img {
-    width: 40%;
-    margin: 10px 0;
+  width: 40%;
+  margin: 10px 0;
 }
 
 /* abilities */
 
 .abilities article {
-    text-align: center;
+  text-align: center;
 }
 
 .abilities img {
-    width: 30%;
-    margin: 8px 3px 10px 0;
+  width: 30%;
+  margin: 8px 3px 10px 0;
 }
 
 /* interests */
 
 .interests article div {
-    width: 90%;
-    height: 200px;
-    background-size: cover;
-    margin: 0 auto 50px auto;
+  width: 90%;
+  height: 200px;
+  background-size: cover;
+  margin: 0 auto 50px auto;
 }
 
 .firstInterest {
-    background-image: url(../img/czech-republic.jpg);
+  background-image: url(../img/czech-republic.jpg);
 }
 
 .secondInterest {
-    background-image: url(../img/stolowe-mountains.jpg);
+  background-image: url(../img/stolowe-mountains.jpg);
 }
 
 .interests article .thirdInterest {
-    transform: rotate(-90deg);
-    background-image: url(../img/dog-running.jpg);
-
+  transform: rotate(-90deg);
+  background-image: url(../img/dog-running.jpg);
 }
 
 /* footer  */
 footer {
-    padding: 15px 0;
-    background-color: grey;
+  padding: 15px 0;
+  background-color: grey;
 }
 
 footer p {
-    font-size: .8rem;
-    text-align: justify;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+/* ---- media queries ----- */
+
+@media (min-width: 400px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  header .fa-phone-alt,
+  header .fa-envelope {
+    font-size: 2.4rem;
+  }
+
+  header > h2 {
+    font-size: 2.4rem;
+  }
+
+  header > h3 {
+    font-size: 2.4rem;
+  }
+  .about h3 {
+    font-size: 2.4rem;
+  }
+  .about .shortAbout {
+    font-size: 2rem;
+    line-height: 150%;
+  }
+  .shortAbout strong {
+    font-size: 2rem;
+  }
+  .activities h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 6rem;
+  }
+
+  header .fa-phone-alt,
+  header .fa-envelope {
+    font-size: 3rem;
+  }
+
+  header > h2 {
+    font-size: 3rem;
+    width: 85%;
+  }
+
+  header > h3 {
+    font-size: 3rem;
+    width: 85%;
+  }
+  .myPhoto {
+    height: 380px;
+    width: 380px;
+  }
+  .about h3 {
+    font-size: 2.8rem;
+  }
+  .about .shortAbout {
+    font-size: 2.4rem;
+    line-height: 150%;
+  }
+  .shortAbout strong {
+    font-size: 2.4rem;
+  }
+  .activities h3 {
+    flex-basis: 90%;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 900px) {
+  header h1 {
+    font-size: 7rem;
+  }
+
+  header .fa-phone-alt,
+  header .fa-envelope {
+    font-size: 4rem;
+  }
+
+  header > h2 {
+    font-size: 4rem;
+    width: 85%;
+  }
+
+  header > h3 {
+    font-size: 4rem;
+    width: 85%;
+  }
+  .myPhoto {
+    height: 480px;
+    width: 480px;
+  }
+  .about h3 {
+    font-size: 3.4rem;
+  }
+  .about .shortAbout {
+    font-size: 3rem;
+    line-height: 150%;
+  }
+  .shortAbout strong {
+    font-size: 3rem;
+  }
+  .activities h3 {
+    flex-basis: 90%;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
 }
