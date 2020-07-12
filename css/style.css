@@ -93,7 +93,7 @@ header .upDiv {
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  padding: 15px 0 20px 0;
+  padding: 40px 0 40px 0;
   text-align: center;
 }
 
@@ -101,7 +101,7 @@ header .upDiv {
   font-size: 1.6rem;
   color: white;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   text-align: justify;
   width: 90%;
   line-height: 150%;
@@ -154,6 +154,7 @@ header .upDiv.show {
   flex-basis: 10%;
   font-size: 2.6rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .in-activities article {
@@ -176,9 +177,10 @@ header .upDiv.show {
 
 article .singleCourse {
   height: auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
   padding-bottom: 15px;
   position: relative;
+  max-width: 900px;
 }
 
 article .date {
@@ -218,10 +220,14 @@ article .singleCourse:nth-last-of-type(1) .organizerLogo {
   display: block;
   height: 2px;
   margin: 50px auto 0 auto;
-  width: 80%;
+  width: 95%;
 }
 
 /* experience */
+.experience.in-activities article {
+  max-width: 900px;
+  margin: 20px auto;
+}
 
 .responsibilities {
   list-style-position: outside;
@@ -380,6 +386,8 @@ footer p {
 }
 
 @media (min-width: 600px) {
+
+  /* header */
   header h1 {
     font-size: 5rem;
   }
@@ -408,11 +416,12 @@ footer p {
     width: 380px;
   }
 
-  .myPhoto {
+  header .myPhoto {
     height: 380px;
     width: 380px;
   }
 
+  /* about */
   .about h3 {
     font-size: 2.4rem;
   }
@@ -426,8 +435,26 @@ footer p {
     font-size: 2rem;
   }
 
+  /* activities */
+
   .activities h3 {
     font-size: 3rem;
+  }
+
+  .activities .singleCourse .description {
+    font-size: 2em;
+  }
+
+  .activities .singleCourse .organizer {
+    font-size: 1.8rem;
+  }
+
+  .activities .singleCourse .organizerLogo {
+    width: 110px;
+  }
+
+  .activities .singleCourse:nth-last-of-type(1) .organizerLogo {
+    width: 170px;
   }
 }
 

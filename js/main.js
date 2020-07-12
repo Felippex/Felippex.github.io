@@ -13,7 +13,22 @@ for (let i = 0; i < 5; i++) {
 } */
 
 // the same as above but in jQuery
-$('.in-activities').each(function () {
+
+$('.show').click(function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).siblings('article').slideUp(300);
+        $('.fa-caret-down', this).removeClass('rotate')
+
+    } else {
+        $(this).addClass('active');
+        $(this).siblings('article').slideDown(300);
+        $('.fa-caret-down', this).addClass('rotate')
+    }
+})
+
+
+/* $('.in-activities').each(function () {
     $(this).click(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
@@ -26,8 +41,7 @@ $('.in-activities').each(function () {
             $('.fa-caret-down', this).addClass('rotate')
         }
     })
-})
-
+}) */
 
 let upDiv = document.querySelector('.upDiv');
 
