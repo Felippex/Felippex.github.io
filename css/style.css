@@ -2,59 +2,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Saira";
+  font-family: "Saira", sans-serif;
   font-weight: normal;
   color: white;
   font-size: 9px;
 }
 
+/* ----- header section ----- */
 header {
-  background-image: url(../img/bg-blue.jpg);
+  background-image: url(../img/hacker.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-bottom: 30px;
+  padding: 80px 0;
 }
 
-header h1 {
+header .nameTitle,
+header .jobTitle {
   color: white;
-  flex-basis: 100%;
   font-weight: bold;
-  font-size: 3.6rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  text-align: center;
+  width: 95%;
+}
+
+header .jobTitle {
+  margin-bottom: 60px;
+}
+
+header .socialMedia {
+  margin-bottom: 120px;
   text-align: center;
 }
 
-header .contactData {
-  width: 100%;
-  padding: 5px 20px;
-
+header .socialMedia a {
+  margin: 0 25px;
 }
 
-header .contactData a {
-  display: inline-block;
-  width: 14%;
+header .fa-linkedin,
+header .fa-github-square {
+  font-size: 5rem;
 }
 
-header .fa-phone-alt,
-header .fa-envelope {
-  font-size: 2.3rem;
-  display: inline-block;
-  margin: 0;
-}
-
-header h2 {
+header .mobileNumber,
+header .emailAddress {
   display: inline-block;
   font-size: 2.3rem;
   width: 85%;
   margin-bottom: 15px;
-}
-
-header h3 {
-  display: inline-block;
-  width: 80%;
-  font-size: 2.3rem;
-  margin-bottom: 20px;
 }
 
 header .upDiv {
@@ -72,7 +69,7 @@ header .upDiv {
   transition: all 0.8s;
 }
 
-.myPhoto {
+header .myPhoto {
   background-image: url(../img/my-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,14 +83,16 @@ header .upDiv {
 /* ----- about section ----- */
 
 .about {
-  background-color: rgb(245, 181, 61);
+  background-image: url(../img/wooden-plank.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about h3 {
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  padding: 40px 0 40px 0;
+  padding: 60px 0 60px 0;
   text-align: center;
 }
 
@@ -302,25 +301,29 @@ article .singleCourse:nth-last-of-type(1) .organizerLogo {
 }
 
 /* interests */
+.interests article {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 
 .interests article div {
-  width: 90%;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-size: cover;
   margin: 0 auto 50px auto;
 }
 
 .firstInterest {
-  background-image: url(../img/czech-republic.jpg);
+  background-image: url(../img/hiking.png);
 }
 
 .secondInterest {
-  background-image: url(../img/stolowe-mountains.jpg);
+  background-image: url(../img/running.jpg);
 }
 
 .interests article .thirdInterest {
-  transform: rotate(-90deg);
-  background-image: url(../img/dog-running.jpg);
+  background-image: url(../img/skiing.jpg);
 }
 
 /* footer  */
@@ -337,34 +340,10 @@ footer p {
 /* ---- media queries ----- */
 
 @media (min-width: 400px) {
-  header h1 {
-    font-size: 3.8rem;
-  }
 
-  header .contactData {
-    width: 400px;
-    padding: 5px 0 5px 40px;
-
-  }
-
-  header .contactData a {
-    width: 40px;
-
-  }
-
-  header .fa-phone-alt,
-  header .fa-envelope {
-    font-size: 2.6rem;
-  }
-
-  header h2 {
-    font-size: 2.6rem;
-    width: 317px;
-  }
-
-  header h3 {
-    font-size: 2.6rem;
-    width: 317px;
+  header .nameTitle,
+  header .jobTitle {
+    font-size: 3.6rem;
   }
 
   .about h3 {
@@ -388,37 +367,11 @@ footer p {
 @media (min-width: 600px) {
 
   /* header */
-  header h1 {
-    font-size: 5rem;
-  }
-
-  header .contactData {
-    width: 500px;
-    margin-left: 4%;
-  }
-
-  header .contactData a {
-    width: 70px;
-  }
-
-  header .fa-phone-alt,
-  header .fa-envelope {
-    font-size: 4rem;
-  }
-
-  header h2 {
-    font-size: 4rem;
-    width: 380px;
-  }
-
-  header h3 {
-    font-size: 4rem;
-    width: 380px;
-  }
-
-  header .myPhoto {
-    height: 380px;
-    width: 380px;
+  header .nameTitle,
+  header .jobTitle {
+    font-size: 4.5rem;
+    text-align: left;
+    margin-left: 70px;
   }
 
   /* about */
@@ -459,28 +412,10 @@ footer p {
 }
 
 @media (min-width: 900px) {
-  header h1 {
-    font-size: 6.2rem;
-  }
 
-  header .fa-phone-alt,
-  header .fa-envelope {
-    font-size: 5rem;
-  }
-
-  header h2 {
-    font-size: 5rem;
-    width: 380px;
-  }
-
-  header h3 {
-    font-size: 5rem;
-    width: 380px;
-  }
-
-  .myPhoto {
-    height: 450px;
-    width: 450px;
+  header .nameTitle,
+  header .jobTitle {
+    margin-left: 100px;
   }
 
   .about h3 {

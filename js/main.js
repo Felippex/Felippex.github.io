@@ -43,7 +43,7 @@ $('.show').click(function () {
     })
 }) */
 
-let upDiv = document.querySelector('.upDiv');
+const upDiv = document.querySelector('.upDiv');
 
 window.addEventListener('scroll', function () {
     let scrollValue = document.documentElement.scrollTop;
