@@ -14,18 +14,18 @@ for (let i = 0; i < 5; i++) {
 
 // the same as above but in jQuery
 
-$('.show').click(function () {
-    if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-        $(this).siblings('article').slideUp(300);
-        $('.fa-caret-down', this).removeClass('rotate')
+// $('.show').click(function () {
+//     if ($(this).hasClass('active')) {
+//         $(this).removeClass('active');
+//         $(this).siblings('article').slideUp(300);
+//         $('.fa-caret-down', this).removeClass('rotate')
 
-    } else {
-        $(this).addClass('active');
-        $(this).siblings('article').slideDown(300);
-        $('.fa-caret-down', this).addClass('rotate')
-    }
-})
+//     } else {
+//         $(this).addClass('active');
+//         $(this).siblings('article').slideDown(300);
+//         $('.fa-caret-down', this).addClass('rotate')
+//     }
+// })
 
 
 /* $('.in-activities').each(function () {
@@ -43,18 +43,18 @@ $('.show').click(function () {
     })
 }) */
 
-const upDiv = document.querySelector('.upDiv');
+const upDiv = document.querySelector('.up-div');
 
 window.addEventListener('scroll', function () {
     let scrollValue = document.documentElement.scrollTop;
-    if (scrollValue > 150) {
+    if (scrollValue > 200) {
         upDiv.classList.add('show')
     } else {
         upDiv.classList.remove('show')
     }
 })
 
-$('.upDiv').click(function () {
+$('.up-div').click(function () {
     $("html, body").animate({
         scrollTop: 0
     }, "slow");

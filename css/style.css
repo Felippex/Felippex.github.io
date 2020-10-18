@@ -17,8 +17,8 @@ header {
   padding: 80px 0;
 }
 
-header .nameTitle,
-header .jobTitle {
+header .name-title,
+header .job-title {
   color: white;
   font-weight: bold;
   font-size: 3rem;
@@ -28,16 +28,16 @@ header .jobTitle {
   width: 95%;
 }
 
-header .jobTitle {
+header .job-title {
   margin-bottom: 60px;
 }
 
-header .socialMedia {
+header .social-media {
   margin-bottom: 120px;
   text-align: center;
 }
 
-header .socialMedia a {
+header .social-media a {
   margin: 0 25px;
 }
 
@@ -54,7 +54,7 @@ header .emailAddress {
   margin-bottom: 15px;
 }
 
-header .upDiv {
+header .up-div {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -69,7 +69,7 @@ header .upDiv {
   transition: all 0.8s;
 }
 
-header .myPhoto {
+header .my-photo {
   background-image: url(../img/my-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,6 +78,20 @@ header .myPhoto {
   height: 280px;
   margin: 0 auto;
   width: 280px;
+}
+
+header .fa-arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+}
+
+header .up-div.show {
+  bottom: 10px;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* ----- about section ----- */
@@ -94,9 +108,10 @@ header .myPhoto {
   font-weight: bold;
   padding: 60px 0 60px 0;
   text-align: center;
+  letter-spacing: 2px;
 }
 
-.about .shortAbout {
+.about .short-about {
   font-size: 1.6rem;
   color: white;
   margin: 0 auto;
@@ -106,90 +121,62 @@ header .myPhoto {
   line-height: 150%;
 }
 
-.shortAbout strong {
+.short-about strong {
   font-size: 1.6rem;
   font-weight: bold;
 }
 
-header .fa-arrow-up {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 2rem;
-  transform: translate(-50%, -50%);
-}
-
-header .upDiv.show {
-  bottom: 10px;
-  visibility: visible;
-  opacity: 1;
-}
-
-/* activities section */
+/* ----- activities section ----- */
 
 .activities {
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(76, 76, 238);
+  background-color: rgb(100, 100, 199);
 }
 
 .in-activities {
   border-bottom: 3px solid white;
   display: flex;
+  justify-content: center;
   flex-basis: 100%;
   flex-wrap: wrap;
   padding: 5px 0;
-  position: relative;
 }
 
-.activities h3 {
-  flex-basis: 90%;
-  font-size: 2.6rem;
+.activities .activities-title {
+  color: black;
+  font-weight: bold;
+  flex-basis: 100%;
+  font-size: 2.8rem;
   text-transform: uppercase;
-}
-
-.in-activities .show {
-  flex-basis: 10%;
-  font-size: 2.6rem;
   text-align: center;
-  cursor: pointer;
 }
 
 .in-activities article {
   flex-basis: 100%;
-  display: none;
   margin: 10px 0;
 }
 
-.fa-caret-down {
-  transition: 0.3s;
-  font-size: 2.6rem;
-}
+/* activities: text in articles */
 
-/* class for rotate fa object (arrow) */
-.rotate {
-  transform: rotate(180deg);
-}
-
-/* text in articles */
-
-article .singleCourse {
+article .single-course {
   height: auto;
   margin: 0 auto 10px auto;
   padding-bottom: 15px;
   position: relative;
-  max-width: 900px;
+  max-width: 600px;
 }
 
 article .date {
-  text-align: center;
+  text-align: left;
+  font-size: 1.8rem;
 }
 
 article .description,
-.companyName {
+article .companyName {
   color: #000;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-top: 20px;
   text-align: left;
 }
@@ -201,7 +188,7 @@ article .organizer,
   text-align: left;
 }
 
-article .organizerLogo {
+article .organizer-logo {
   position: absolute;
   bottom: 30%;
   right: 0;
@@ -209,17 +196,17 @@ article .organizerLogo {
   width: auto;
 }
 
-article .singleCourse:nth-last-of-type(1) .organizerLogo {
+article .single-course:nth-last-of-type(1) .organizer-logo {
   width: 150px;
 }
 
-.courses .singleCourse:after {
-  background-color: blue;
+.courses .single-course:after {
+  background-color: black;
   content: "";
   display: block;
   height: 2px;
   margin: 50px auto 0 auto;
-  width: 95%;
+  width: 97%;
 }
 
 /* experience */
@@ -341,8 +328,8 @@ footer p {
 
 @media (min-width: 400px) {
 
-  header .nameTitle,
-  header .jobTitle {
+  header .name-title,
+  header .job-title {
     font-size: 3.6rem;
   }
 
@@ -350,25 +337,21 @@ footer p {
     font-size: 2.2rem;
   }
 
-  .about .shortAbout {
+  .about .short-about {
     font-size: 1.8rem;
     line-height: 150%;
   }
 
-  .shortAbout strong {
+  .short-about strong {
     font-size: 1.8rem;
-  }
-
-  .activities h3 {
-    font-size: 2.4rem;
   }
 }
 
 @media (min-width: 600px) {
 
   /* header */
-  header .nameTitle,
-  header .jobTitle {
+  header .name-title,
+  header .job-title {
     font-size: 4.5rem;
     text-align: left;
     margin-left: 70px;
@@ -379,42 +362,43 @@ footer p {
     font-size: 2.4rem;
   }
 
-  .about .shortAbout {
+  .about .short-about {
     font-size: 2rem;
     line-height: 150%;
   }
 
-  .shortAbout strong {
+  .short-about strong {
     font-size: 2rem;
   }
 
   /* activities */
 
-  .activities h3 {
+  .activities .activities-title {
     font-size: 3rem;
   }
 
-  .activities .singleCourse .description {
-    font-size: 2em;
+  .activities .single-course .description,
+  .activities .single-course .date {
+    font-size: 2.4em;
   }
 
-  .activities .singleCourse .organizer {
+  .activities .single-course .organizer {
     font-size: 1.8rem;
   }
 
-  .activities .singleCourse .organizerLogo {
-    width: 110px;
+  .activities .single-course .organizer-logo {
+    width: 130px;
   }
 
-  .activities .singleCourse:nth-last-of-type(1) .organizerLogo {
+  .activities .single-course:nth-last-of-type(1) .organizer-logo {
     width: 170px;
   }
 }
 
 @media (min-width: 900px) {
 
-  header .nameTitle,
-  header .jobTitle {
+  header .name-title,
+  header .job-title {
     margin-left: 100px;
   }
 
@@ -422,18 +406,17 @@ footer p {
     font-size: 3.2rem;
   }
 
-  .about .shortAbout {
+  .about .short-about {
     font-size: 2.8rem;
     line-height: 150%;
   }
 
-  .shortAbout strong {
+  .short-about strong {
     font-size: 2.8rem;
   }
 
-  .activities h3 {
+  .activities .activities-title {
     flex-basis: 90%;
     font-size: 3.8rem;
-    text-transform: uppercase;
   }
 }
