@@ -5,6 +5,9 @@
   font-family: "Saira", sans-serif;
   font-weight: normal;
   color: white;
+}
+
+html {
   font-size: 9px;
 }
 
@@ -38,7 +41,7 @@ header .social-media {
 }
 
 header .social-media a {
-  margin: 0 25px;
+  margin-right: 25px;
 }
 
 header .fa-linkedin,
@@ -132,7 +135,7 @@ header .up-div.show {
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(100, 100, 199);
+  background-color: rgb(229, 229, 240);
 }
 
 .in-activities {
@@ -141,7 +144,7 @@ header .up-div.show {
   justify-content: center;
   flex-basis: 100%;
   flex-wrap: wrap;
-  padding: 5px 0;
+  padding: 40px 8px 0 8px;
 }
 
 .activities .activities-title {
@@ -149,12 +152,14 @@ header .up-div.show {
   font-weight: bold;
   flex-basis: 100%;
   font-size: 2.8rem;
+  margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .in-activities article {
   flex-basis: 100%;
+  font-size: 9px;
   margin: 10px 0;
 }
 
@@ -169,21 +174,24 @@ article .single-course {
 }
 
 article .date {
+  color: #000;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.8em;
 }
 
 article .description,
 article .companyName {
   color: #000;
-  font-size: 1.8rem;
+  font-size: 1.5em;
+  font-weight: bold;
   margin-top: 20px;
   text-align: left;
 }
 
 article .organizer,
-.jobPosition {
-  font-size: 1.4rem;
+article .jobPosition {
+  color: #555;
+  font-size: 1.4em;
   margin-top: 5px;
   text-align: left;
 }
@@ -192,12 +200,12 @@ article .organizer-logo {
   position: absolute;
   bottom: 30%;
   right: 0;
-  margin-right: 10px;
-  width: auto;
+  width: 70px;
 }
 
 article .single-course:nth-last-of-type(1) .organizer-logo {
-  width: 150px;
+  width: 100px;
+  bottom: 52%;
 }
 
 .courses .single-course:after {
@@ -209,9 +217,10 @@ article .single-course:nth-last-of-type(1) .organizer-logo {
   width: 97%;
 }
 
-/* experience */
+/* ----- experience ----- */
+
 .experience.in-activities article {
-  max-width: 900px;
+  max-width: 600px;
   margin: 20px auto;
 }
 
@@ -222,43 +231,45 @@ article .single-course:nth-last-of-type(1) .organizer-logo {
 }
 
 .responsibilities li {
-  font-size: 1.2rem;
+  color: #000;
+  font-size: 1.2em;
   font-style: italic;
   text-align: justify;
 }
 
-/* education */
+/* ------ education ------ */
 .singleMajor {
   text-align: center;
 }
 
-.date {
-  margin-top: 10px;
-  font-size: 2.2rem;
-}
-
 .singleMajor p {
+  color: black;
   margin-bottom: 15px;
 }
 
+.singleMajor .date {
+  text-align: center;
+}
+
 .singleMajor .major {
-  font-size: 2.2rem;
-  letter-spacing: 2px;
+  font-size: 2.2em;
+  letter-spacing: 1px;
   color: #000;
 }
 
 .singleMajor .level {
-  font-size: 2rem;
-  letter-spacing: 2px;
+  font-size: 2em;
+  letter-spacing: 1px;
 }
 
 .singleMajor .university {
   margin-bottom: 5px;
-  font-size: 1.6rem;
+  font-size: 1.6em;
 }
 
 .singleMajor .faculty {
-  font-size: 1.4rem;
+  font-size: 1.4em;
+  color: #888;
 }
 
 .singleMajor .faculty:after {
@@ -276,29 +287,44 @@ article .single-course:nth-last-of-type(1) .organizer-logo {
   margin: 10px 0;
 }
 
-/* abilities */
+/* ----- abilities ----- */
+
+.abilities {
+  margin: 50px 0;
+  width: 70vw;
+}
 
 .abilities article {
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.abilities .abilitiesList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .abilities img {
-  width: 30%;
-  margin: 8px 3px 10px 0;
+  width: 70px;
+  margin: 10px;
 }
 
 /* interests */
 .interests article {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .interests article div {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-size: cover;
-  margin: 0 auto 50px auto;
+  /* margin: 0 auto 50px auto; */
+  margin: 0 10px 50px 0;
+  border-radius: 5%;
+  border: 5px solid black;
 }
 
 .firstInterest {
@@ -313,15 +339,15 @@ article .single-course:nth-last-of-type(1) .organizer-logo {
   background-image: url(../img/skiing.jpg);
 }
 
-/* footer  */
+.interests article .fourthInterest {
+  background-image: url(../img/cross-country.png);
+}
+
+/* ----- footer -----  */
 footer {
   padding: 15px 0;
   background-color: grey;
-}
-
-footer p {
-  font-size: 0.8rem;
-  text-align: justify;
+  text-align: center;
 }
 
 /* ---- media queries ----- */
@@ -345,11 +371,15 @@ footer p {
   .short-about strong {
     font-size: 1.8rem;
   }
+
+  .activities .single-course .organizer-logo {
+    width: 95px;
+  }
 }
 
 @media (min-width: 600px) {
 
-  /* header */
+  /* ----- header ----- */
   header .name-title,
   header .job-title {
     font-size: 4.5rem;
@@ -357,7 +387,13 @@ footer p {
     margin-left: 70px;
   }
 
-  /* about */
+  header .social-media {
+    text-align: left;
+    margin-left: 70px;
+    ;
+  }
+
+  /* ----- about ----- */
   .about h3 {
     font-size: 2.4rem;
   }
@@ -377,13 +413,8 @@ footer p {
     font-size: 3rem;
   }
 
-  .activities .single-course .description,
-  .activities .single-course .date {
-    font-size: 2.4em;
-  }
-
-  .activities .single-course .organizer {
-    font-size: 1.8rem;
+  .in-activities article {
+    font-size: 12px;
   }
 
   .activities .single-course .organizer-logo {
@@ -393,12 +424,17 @@ footer p {
   .activities .single-course:nth-last-of-type(1) .organizer-logo {
     width: 170px;
   }
+
 }
 
 @media (min-width: 900px) {
 
   header .name-title,
   header .job-title {
+    margin-left: 100px;
+  }
+
+  header .social-media {
     margin-left: 100px;
   }
 
