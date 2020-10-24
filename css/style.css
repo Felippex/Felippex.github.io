@@ -12,7 +12,7 @@ html {
 }
 
 /* ----- header section ----- */
-header {
+.header {
   background-image: url(../img/hacker.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,8 +21,8 @@ header {
   padding: 80px 0;
 }
 
-header .name-title,
-header .job-title {
+.header__name,
+.header__job {
   color: white;
   font-weight: bold;
   font-size: 3rem;
@@ -32,33 +32,33 @@ header .job-title {
   width: 95%;
 }
 
-header .job-title {
+.header .header__job {
   margin-bottom: 60px;
 }
 
-header .social-media {
+.header__social-media {
   margin-bottom: 120px;
   text-align: center;
 }
 
-header .social-media a {
+.header__link {
   margin-right: 25px;
 }
 
-header .fa-linkedin,
-header .fa-github-square {
+.header .fa-linkedin,
+.header .fa-github-square {
   font-size: 5rem;
 }
 
-header .mobileNumber,
-header .emailAddress {
+.header .mobileNumber,
+.header .emailAddress {
   display: inline-block;
   font-size: 2.3rem;
   width: 85%;
   margin-bottom: 15px;
 }
 
-header .up-div {
+.header__up-arrow {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -73,7 +73,7 @@ header .up-div {
   transition: all 0.8s;
 }
 
-header .my-photo {
+.header__my-photo {
   background-image: url(../img/my-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +84,7 @@ header .my-photo {
   width: 280px;
 }
 
-header .fa-arrow-up {
+.header .fa-arrow-up {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,7 +92,7 @@ header .fa-arrow-up {
   transform: translate(-50%, -50%);
 }
 
-header .up-div.show {
+.header__up-arrow--show {
   bottom: 10px;
   visibility: visible;
   opacity: 1;
@@ -106,7 +106,7 @@ header .up-div.show {
   background-repeat: no-repeat;
 }
 
-.about h3 {
+.about__title {
   color: white;
   font-size: 2rem;
   font-weight: bold;
@@ -115,7 +115,7 @@ header .up-div.show {
   letter-spacing: 2px;
 }
 
-.about .short-about {
+.about__about-me {
   font-size: 1.6rem;
   color: white;
   margin: 0 auto;
@@ -125,8 +125,7 @@ header .up-div.show {
   line-height: 150%;
 }
 
-.short-about strong {
-  font-size: 1.6rem;
+.about__about-me--bold {
   font-weight: bold;
 }
 
@@ -134,7 +133,7 @@ header .up-div.show {
 
 .activities {
   padding: 0 20px;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   background-color: rgb(229, 229, 240);
 }
@@ -146,6 +145,10 @@ header .up-div.show {
   flex-basis: 100%;
   flex-wrap: wrap;
   padding: 40px 8px 0 8px;
+}
+
+.in-activities:nth-last-of-type(1) {
+  border: none;
 }
 
 .activities .activities-title {
@@ -355,22 +358,18 @@ footer {
 
 @media (min-width: 400px) {
 
-  header .name-title,
-  header .job-title {
+  .header__name,
+  .header__job {
     font-size: 3.6rem;
   }
 
-  .about h3 {
+  .about__title {
     font-size: 2.2rem;
   }
 
-  .about .short-about {
+  .about__about-me {
     font-size: 1.8rem;
     line-height: 150%;
-  }
-
-  .short-about strong {
-    font-size: 1.8rem;
   }
 
   .activities .single-course .organizer-logo {
@@ -381,31 +380,27 @@ footer {
 @media (min-width: 600px) {
 
   /* ----- header ----- */
-  header .name-title,
-  header .job-title {
+  .header__name,
+  .header__job {
     font-size: 4.5rem;
     text-align: left;
     margin-left: 70px;
   }
 
-  header .social-media {
+  .header__social-media {
     text-align: left;
     margin-left: 70px;
     ;
   }
 
   /* ----- about ----- */
-  .about h3 {
+  .about__title {
     font-size: 2.4rem;
   }
 
-  .about .short-about {
+  .about__about-me {
     font-size: 2rem;
     line-height: 150%;
-  }
-
-  .short-about strong {
-    font-size: 2rem;
   }
 
   /* activities */
@@ -430,25 +425,25 @@ footer {
 
 @media (min-width: 900px) {
 
-  header .name-title,
-  header .job-title {
+  .header__name,
+  .header__job {
     margin-left: 100px;
   }
 
-  header .social-media {
+  .header__social-media {
     margin-left: 100px;
   }
 
-  .about h3 {
+  .about__title {
     font-size: 3.2rem;
   }
 
-  .about .short-about {
+  .about__about-me {
     font-size: 2.8rem;
     line-height: 150%;
   }
 
-  .short-about strong {
+  .about-me strong {
     font-size: 2.8rem;
   }
 
