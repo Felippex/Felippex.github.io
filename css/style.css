@@ -2,13 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Saira", sans-serif;
+  font-family: "Saira", "B612", sans-serif;
   font-weight: normal;
   color: white;
 }
 
 html {
   font-size: 9px;
+}
+
+.title {
+  color: black;
+  font-weight: bold;
+  flex-basis: 100%;
+  font-family: "B612";
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* ----- header section ----- */
@@ -25,15 +36,18 @@ html {
 .header__job {
   color: white;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3em;
   letter-spacing: 3px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   width: 95%;
 }
 
-.header .header__job {
+.header__job {
+  font-size: 2.3em;
+  font-weight: normal;
   margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .header__social-media {
@@ -79,9 +93,9 @@ html {
   background-size: cover;
   border-radius: 5%;
   border: 1px solid blue;
-  height: 280px;
+  height: 260px;
   margin: 0 auto;
-  width: 280px;
+  width: 260px;
 }
 
 .header .fa-arrow-up {
@@ -108,11 +122,12 @@ html {
 
 .about__title {
   color: white;
-  font-size: 2rem;
+  font-size: 3em;
   font-weight: bold;
   padding: 60px 0 60px 0;
   text-align: center;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .about__about-me {
@@ -129,39 +144,25 @@ html {
   font-weight: bold;
 }
 
-/* ----- activities section ----- */
+/* ----- activity-section for next sections ----- */
 
-.activities {
-  padding: 0 20px;
-  /* display: flex; */
-  flex-wrap: wrap;
-  background-color: rgb(229, 229, 240);
-}
-
-.in-activities {
-  border-bottom: 3px solid white;
+.activity-section {
   display: flex;
-  justify-content: center;
   flex-basis: 100%;
   flex-wrap: wrap;
-  padding: 40px 8px 0 8px;
+  justify-content: center;
+  padding: 40px 15px 0 15px;
 }
 
-.in-activities:nth-last-of-type(1) {
-  border: none;
+/* ----- project section ----- */
+
+/* ----- courses section ----- */
+
+.courses {
+  background-color: #8EE600;
 }
 
-.activities .activities-title {
-  color: black;
-  font-weight: bold;
-  flex-basis: 100%;
-  font-size: 2.8rem;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.in-activities article {
+.activity-section article {
   flex-basis: 100%;
   font-size: 9px;
   margin: 10px 0;
@@ -221,24 +222,28 @@ article .single-course:nth-last-of-type(1) .organizer-logo {
   width: 97%;
 }
 
-/* ----- experience ----- */
+/* ----- abilities ----- */
 
-.experience.in-activities article {
-  max-width: 600px;
-  margin: 20px auto;
+.abilities {
+  background-color: #1753E6;
+  margin: 0px auto;
+  padding: 50px 0;
 }
 
-.responsibilities {
-  list-style-position: outside;
-  margin-top: 5px;
-  padding-left: 30px;
+.abilities article {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.responsibilities li {
-  color: #000;
-  font-size: 1.2em;
-  font-style: italic;
-  text-align: justify;
+.abilities__skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.abilities__skill {
+  width: 70px;
+  margin: 10px;
 }
 
 /* ------ education ------ */
@@ -291,29 +296,6 @@ article .single-course:nth-last-of-type(1) .organizer-logo {
   margin: 10px 0;
 }
 
-/* ----- abilities ----- */
-
-.abilities {
-  margin: 50px 0;
-  width: 70vw;
-}
-
-.abilities article {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.abilities .abilitiesList {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.abilities img {
-  width: 70px;
-  margin: 10px;
-}
-
 /* interests */
 .interests article {
   display: flex;
@@ -356,7 +338,7 @@ footer {
 
 /* ---- media queries ----- */
 
-@media (min-width: 400px) {
+@media (min-width: 425px) {
 
   .header__name,
   .header__job {
@@ -364,7 +346,7 @@ footer {
   }
 
   .about__title {
-    font-size: 2.2rem;
+    font-size: 3.6rem;
   }
 
   .about__about-me {
@@ -377,7 +359,7 @@ footer {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 
   /* ----- header ----- */
   .header__name,
@@ -395,7 +377,7 @@ footer {
 
   /* ----- about ----- */
   .about__title {
-    font-size: 2.4rem;
+    font-size: 4.2rem;
   }
 
   .about__about-me {
@@ -405,11 +387,11 @@ footer {
 
   /* activities */
 
-  .activities .activities-title {
+  .title {
     font-size: 3rem;
   }
 
-  .in-activities article {
+  .activity-section article {
     font-size: 12px;
   }
 
@@ -423,7 +405,7 @@ footer {
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
 
   .header__name,
   .header__job {
@@ -447,7 +429,7 @@ footer {
     font-size: 2.8rem;
   }
 
-  .activities .activities-title {
+  .title {
     flex-basis: 90%;
     font-size: 3.8rem;
   }

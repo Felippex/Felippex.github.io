@@ -8,14 +8,14 @@
   <title>Bartosz Filip CV</title>
   <script src="https://kit.fontawesome.com/4fe6582494.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Saira:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Saira:wght@400;800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <h1 class="header__name">Bartosz Filip</h1>
-    <h2 class="header__job">Frontend Developer</h2>
+    <h1 class="title header__name">Bartosz Filip</h1>
+    <h2 class="title header__job">Frontend Developer</h2>
     <div class="header__social-media">
       <a class="header__link" href="https://www.linkedin.com/in/bartoszfilip" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a class="header__link" href="https://github.com/Felippex" target="_blank"><i class="fab fa-github-square"></i></a>
@@ -24,9 +24,9 @@
     <div class="header__up-arrow"><i class="fas fa-arrow-up"></i></div>
   </header>
   <section class="about">
-    <h3 class="about__title">About me</h3>
+    <h3 class="title about__title">About me</h3>
     <p class="about__about-me">
-      I want to continue my career as a <strong class="about_about-me--bold">Junior Front End Developer</strong> and
+      I want to continue my career as a <strong class="about__about-me--bold">Junior Front End Developer</strong> and
       broaden my knowledge of
       programming in <strong class="about__about-me--bold">JavaScript</strong>. My motivation to work is desire to
       constantly acquire new and develop
@@ -36,114 +36,91 @@
       <strong class="about__about-me--bold">teamwork</strong> are the key
       factors for success.</p>
   </section>
+  <section class="projects activity-section">
+    <h3 class="title projects__title">Projects</h3>
+  </section>
 
-  <section class="activities">
-    <section class="courses in-activities">
-      <h3 class="activities-title">Courses and trainings</h3>
-      <article>
-        <div class="single-course">
-          <p class="date">December 2019 - February 2020</p>
-          <p class="description">Web Developer from basis</p>
-          <p class="organizer">Akademia 108</p>
-          <img class="organizer-logo" src="img/akademia108_logo_mob.png" alt="organizer-logo">
-        </div>
-        <div class="single-course">
-          <p class="date">October 2019 - October 2020</p>
-          <p class="description">Programming in JavaScript</p>
-          <p class="organizer">Samuraj Programowania <br>(Udemy)</p>
-          <img src="img/web-samuraj-logo.png" alt="organizer logo" class="organizer-logo">
-        </div>
-        <div class="single-course">
-          <p class="date">August 2019 - October 2019</p>
-          <p class="description">Front End advanced</p>
-          <p class="organizer">Samuraj Programowania <br>(Udemy)</p>
-          <img src="img/web-samuraj-logo.png" alt="organizer logo" class="organizer-logo">
-        </div>
-        <div class="single-course">
-          <p class="date">July 2019 - August 2019</p>
-          <p class="description">Web Developer from basis</p>
-          <p class="organizer">Samuraj Programowania <br>(Udemy)</p>
-          <img src="img/web-samuraj-logo.png" alt="organizer logo" class="organizer-logo">
-        </div>
-        <div class="single-course">
-          <p class="date">July 2016</p>
-          <p class="description">Effective Communication</p>
-          <p class="organizer">Quest Change Managers </p>
-          <img src="img/qcm-logo.png" alt="organizer logo" class="organizer-logo">
-        </div>
-      </article>
-    </section>
-    <section class="abilities in-activities">
-      <h3 class="activities-title"> Technologies and skills</h3>
-      <article class="abilitiesList">
-        <img src="img/html-logo.png" alt="HTML5">
-        <img src="img/css-logo.png" alt="CSS3">
-        <img src="img/js-logo.png" alt="JavaScript">
-        <img src="img/jquery-logo.png" alt="jQuery">
-        <img src="img/react-logo.png" alt="react">
-        <img src="img/jira-logo.png" alt="JIRA">
-        <img src="img/git-logo.png" alt="GIT">
-        <img src="img/office-logo.png" alt="Microsoft Office">
-        <img src="img/communication-icon.png" alt="Good comunication skills">
-      </article>
-    </section>
-    <section class="experience in-activities">
-      <h3 class="activities-title">Experience</h3>
-      <article>
-        <p class="date">May 2016 -</p>
-        <p class="companyName">Wikpol Ltd.</p>
-        <p class="jobPosition">Sales Specialist</p>
-        <ul class="responsibilities">
-          <li>preparing of: quotations, estimates and trade agreements for Clients,</li>
-          <li>technical consultancy,</li>
-          <li>contact with subcontractors,</li>
-          <li>cooperation with technical departments,</li>
-          <li>realization of sales plans.</li>
-        </ul>
-      </article>
-      <article>
-        <p class="date">July 2015 - September 2015 </p>
-        <p class="companyName">New Design Solutions Paweł Koczan</p>
-        <p class="jobPosition">CAD Designer</p>
-      </article>
-      <article>
-        <p class="date">August 2014 - September 2014</p>
-        <p class="companyName">Toyota Motor Manufacturing Poland Ltd.</p>
-        <p class="jobPosition">Intern in Quality Engineering department</p>
-      </article>
-    </section>
-    <section class="education in-activities">
-      <h3 class="activities-title">Education</h3>
-      <article>
-        <div class="singleMajor">
-          <p class="date">2016 - 2018</p>
-          <img src="img/pollub-logo.png" alt="Lublin University of Technology">
-          <p class="major">Mechanics and mechanical engineering</p>
-          <p class="level">title: Master of Science</p>
-          <p class="university">Lublin University of Technology</p>
-          <p class="faculty">Faculty of Mechanical Engineering</p>
-        </div>
-        <div class="singleMajor">
-          <p class="date">2012 - 2016</p>
-          <img src="img/pollub-logo.png" alt="Lublin University of Technology">
-          <p class="major">Material Engineering</p>
-          <p class="level">title: Bachelor of Science</p>
-          <p class="university">Lublin University of Technology</p>
-          <p class="faculty">Faculty of Mechanical Engineering</p>
-        </div>
-        <div class="singleMajor">
-          <p class="date">2011 - 2015</p>
-          <img src="img/pollub-logo.png" alt="Lublin University of Technology">
-          <p class="major">Mechanics and mechanical engineering</p>
-          <p class="level">title: Bachelor of Science</p>
-          <p class="university">Lublin University of Technology</p>
-          <p class="faculty">Faculty of Mechanical Engineering</p>
-        </div>
-      </article>
-    </section>
+  <section class="courses activity-section">
+    <h3 class="title courses__title">Courses and trainings</h3>
+    <article>
+      <div class="single-course">
+        <p class="date">December 2019 - February 2020</p>
+        <p class="description">Web Developer from basis</p>
+        <p class="organizer">Akademia 108</p>
+        <img class="organizer-logo" src="img/akademia108_logo_mob.png" alt="organizer-logo">
+      </div>
+      <div class="single-course">
+        <p class="date">October 2019 - October 2020</p>
+        <p class="description">Programming in JavaScript</p>
+        <p class="organizer">Samuraj Programowania <br>(Udemy)</p>
+        <img src="img/web-samuraj-logo.png" alt="organizer logo" class="organizer-logo">
+      </div>
+      <div class="single-course">
+        <p class="date">August 2019 - October 2019</p>
+        <p class="description">Front End advanced</p>
+        <p class="organizer">Samuraj Programowania <br>(Udemy)</p>
+        <img src="img/web-samuraj-logo.png" alt="organizer logo" class="organizer-logo">
+      </div>
+      <div class="single-course">
+        <p class="date">July 2019 - August 2019</p>
+        <p class="description">Web Developer from basis</p>
+        <p class="organizer">Samuraj Programowania <br>(Udemy)</p>
+        <img src="img/web-samuraj-logo.png" alt="organizer logo" class="organizer-logo">
+      </div>
+      <div class="single-course">
+        <p class="date">July 2016</p>
+        <p class="description">Effective Communication</p>
+        <p class="organizer">Quest Change Managers </p>
+        <img src="img/qcm-logo.png" alt="organizer logo" class="organizer-logo">
+      </div>
+    </article>
+  </section>
+  <section class="abilities activity-section">
+    <h3 class="title abilities__title"> Technologies and skills</h3>
+    <article class="abilities__skills-list">
+      <img class="abilities__skill" src="img/html-logo.png" alt="HTML5">
+      <img class="abilities__skill" src="img/css-logo.png" alt="CSS3">
+      <img class="abilities__skill" src="img/js-logo.png" alt="JavaScript">
+      <img class="abilities__skill" src="img/jquery-logo.png" alt="jQuery">
+      <img class="abilities__skill" src="img/react-logo.png" alt="react">
+      <img class="abilities__skill" src="img/jira-logo.png" alt="JIRA">
+      <img class="abilities__skill" src="img/git-logo.png" alt="GIT">
+      <img class="abilities__skill" src="img/office-logo.png" alt="Microsoft Office">
+      <img class="abilities__skill" src="img/communication-icon.png" alt="Good comunication skills">
+    </article>
+  </section>
+  <section class="education activity-section">
+    <h3 class="title activities-title">Education</h3>
+    <article>
+      <div class="singleMajor">
+        <p class="date">2016 - 2018</p>
+        <img src="img/pollub-logo.png" alt="Lublin University of Technology">
+        <p class="major">Mechanics and mechanical engineering</p>
+        <p class="level">title: Master of Science</p>
+        <p class="university">Lublin University of Technology</p>
+        <p class="faculty">Faculty of Mechanical Engineering</p>
+      </div>
+      <div class="singleMajor">
+        <p class="date">2012 - 2016</p>
+        <img src="img/pollub-logo.png" alt="Lublin University of Technology">
+        <p class="major">Material Engineering</p>
+        <p class="level">title: Bachelor of Science</p>
+        <p class="university">Lublin University of Technology</p>
+        <p class="faculty">Faculty of Mechanical Engineering</p>
+      </div>
+      <div class="singleMajor">
+        <p class="date">2011 - 2015</p>
+        <img src="img/pollub-logo.png" alt="Lublin University of Technology">
+        <p class="major">Mechanics and mechanical engineering</p>
+        <p class="level">title: Bachelor of Science</p>
+        <p class="university">Lublin University of Technology</p>
+        <p class="faculty">Faculty of Mechanical Engineering</p>
+      </div>
+    </article>
+
 
     <section class="interests in-activities">
-      <h3 class="activities-title">Interests</h3>
+      <h3 class="title interests__title">Interests</h3>
       <article>
         <div class="firstInterest"></div>
         <div class="secondInterest"></div>
