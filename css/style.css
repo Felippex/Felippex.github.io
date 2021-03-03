@@ -22,6 +22,10 @@ html {
   text-align: center;
 }
 
+.activity-section {
+  padding: calc(3rem + 7vw) 15px 50px 15px;
+}
+
 /* ----- header section ----- */
 .header {
   background-image: url(../img/hacker.jpg);
@@ -144,17 +148,45 @@ html {
   font-weight: bold;
 }
 
-/* ----- activity-section for next sections ----- */
+/* ----- project section ----- */
 
-.activity-section {
-  display: flex;
-  flex-basis: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 40px 15px 0 15px;
+.projects {
+  /* padding: 30px 0; */
 }
 
-/* ----- project section ----- */
+.projects__project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.projects__project {
+  width: 250px;
+  margin: 0 10px 30px 10px;
+  overflow: hidden;
+}
+
+.projects__project-img {
+  width: 100%;
+  height: auto;
+  border: 5px double #444;
+}
+
+.projects__project-name {
+  font-size: 2em;
+  color: black;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.projects__project-description {
+  color: black;
+  font-size: 1.3em;
+  padding: 0 10px;
+  text-align: justify;
+}
+
 
 /* ----- courses section ----- */
 
@@ -162,17 +194,13 @@ html {
   background-color: #8EE600;
 }
 
-.activity-section article {
-  flex-basis: 100%;
-  font-size: 9px;
-  margin: 10px 0;
-}
+
 
 /* activities: text in articles */
 
 article .single-course {
   height: auto;
-  margin: 0 auto 10px auto;
+  margin: 0 auto;
   padding-bottom: 15px;
   position: relative;
   max-width: 600px;
@@ -352,6 +380,10 @@ footer {
   .about__about-me {
     font-size: 1.8rem;
     line-height: 150%;
+  }
+
+  .projects__project {
+    width: 350px;
   }
 
   .activities .single-course .organizer-logo {
