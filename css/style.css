@@ -16,7 +16,7 @@ html {
   font-weight: bold;
   flex-basis: 100%;
   font-family: "B612";
-  font-size: 2.8em;
+  font-size: 3rem;
   margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;
@@ -28,7 +28,7 @@ html {
 
 /* ----- header section ----- */
 .header {
-  background-image: url(../img/hacker.jpg);
+  background-image: url(../img/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -40,7 +40,7 @@ html {
 .header__job {
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: calc(16px + 2vw);
   letter-spacing: 3px;
   margin: 0 auto 20px auto;
   text-align: center;
@@ -48,7 +48,7 @@ html {
 }
 
 .header__job {
-  font-size: 2.3em;
+  font-size: calc(16px + 1vw);
   font-weight: normal;
   margin-bottom: 60px;
   text-transform: uppercase;
@@ -126,7 +126,6 @@ html {
 
 .about__title {
   color: white;
-  font-size: 3em;
   font-weight: bold;
   padding: 60px 0 60px 0;
   text-align: center;
@@ -370,7 +369,7 @@ footer {
 
   .header__name,
   .header__job {
-    font-size: 3.6rem;
+    /* font-size: 3.6rem; */
   }
 
   .about__title {
@@ -396,7 +395,7 @@ footer {
   /* ----- header ----- */
   .header__name,
   .header__job {
-    font-size: 4.5rem;
+    /* font-size: 4.5rem; */
     text-align: left;
     margin-left: 70px;
   }
@@ -420,7 +419,7 @@ footer {
   /* activities */
 
   .title {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .activity-section article {
@@ -463,6 +462,6 @@ footer {
 
   .title {
     flex-basis: 90%;
-    font-size: 3.8rem;
+    /* font-size: 3.8rem; */
   }
 }
