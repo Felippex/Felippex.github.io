@@ -16,15 +16,16 @@ html {
   font-weight: bold;
   flex-basis: 100%;
   font-family: "B612";
-  font-size: 3rem;
-  margin-bottom: 40px;
+  font-size: calc(18px + 2vw);
+  letter-spacing: 3px;
+  margin-bottom: 60px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.activity-section {
+/* .activity-section {
   padding: calc(3rem + 7vw) 15px 50px 15px;
-}
+} */
 
 /* ----- header section ----- */
 .header {
@@ -39,11 +40,7 @@ html {
 .header__name,
 .header__job {
   color: white;
-  font-weight: bold;
-  font-size: calc(16px + 2vw);
-  letter-spacing: 3px;
   margin: 0 auto 20px auto;
-  text-align: center;
   width: 95%;
 }
 
@@ -51,8 +48,7 @@ html {
   font-size: calc(16px + 1vw);
   font-weight: normal;
   margin-bottom: 60px;
-  text-transform: uppercase;
-}
+  }
 
 .header__social-media {
   margin-bottom: 120px;
@@ -68,27 +64,18 @@ html {
   font-size: 5rem;
 }
 
-.header .mobileNumber,
-.header .emailAddress {
-  display: inline-block;
-  font-size: 2.3rem;
-  width: 85%;
-  margin-bottom: 15px;
-}
-
 .header__up-arrow {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
   background-color: red;
-  position: fixed;
+  border-radius: 50%;
   bottom: -45px;
-  right: 10px;
-  transition: 0.3s;
-  z-index: 1000;
-  visibility: hidden;
+  height: 40px;
   opacity: 0;
+  position: fixed;
+  right: 10px;
   transition: all 0.8s;
+  visibility: hidden;
+  width: 40px;
+  z-index: 1000;
 }
 
 .header__my-photo {
@@ -97,9 +84,9 @@ html {
   background-size: cover;
   border-radius: 5%;
   border: 1px solid blue;
-  height: 260px;
+  height: calc(240px + 8vw);
   margin: 0 auto;
-  width: 260px;
+  width: calc(240px + 8vw);
 }
 
 .header .fa-arrow-up {
@@ -122,19 +109,15 @@ html {
   background-image: url(../img/wooden-plank.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 80px 0;
 }
 
 .about__title {
   color: white;
-  font-weight: bold;
-  padding: 60px 0 60px 0;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
+  }
 
 .about__about-me {
-  font-size: 1.6rem;
+  font-size: calc(10.5px + 1.2vw);
   color: white;
   margin: 0 auto;
   padding-bottom: 60px;
@@ -148,9 +131,8 @@ html {
 }
 
 /* ----- project section ----- */
-
-.projects {
-  /* padding: 30px 0; */
+.projects{
+  padding: 80px 0;
 }
 
 .projects__project-list {
@@ -162,7 +144,7 @@ html {
 
 .projects__project {
   width: 250px;
-  margin: 0 10px 30px 10px;
+  margin: 0 10px calc(20px + 3vw) 10px;
   overflow: hidden;
 }
 
@@ -367,22 +349,8 @@ footer {
 
 @media (min-width: 425px) {
 
-  .header__name,
-  .header__job {
-    /* font-size: 3.6rem; */
-  }
-
-  .about__title {
-    font-size: 3.6rem;
-  }
-
-  .about__about-me {
-    font-size: 1.8rem;
-    line-height: 150%;
-  }
-
   .projects__project {
-    width: 350px;
+   width: 350px;
   }
 
   .activities .single-course .organizer-logo {
@@ -395,7 +363,6 @@ footer {
   /* ----- header ----- */
   .header__name,
   .header__job {
-    /* font-size: 4.5rem; */
     text-align: left;
     margin-left: 70px;
   }
@@ -406,21 +373,7 @@ footer {
     ;
   }
 
-  /* ----- about ----- */
-  .about__title {
-    font-size: 4.2rem;
-  }
-
-  .about__about-me {
-    font-size: 2rem;
-    line-height: 150%;
-  }
-
-  /* activities */
-
-  .title {
-    /* font-size: 3rem; */
-  }
+   /* activities */
 
   .activity-section article {
     font-size: 12px;
@@ -447,21 +400,7 @@ footer {
     margin-left: 100px;
   }
 
-  .about__title {
-    font-size: 3.2rem;
-  }
-
-  .about__about-me {
-    font-size: 2.8rem;
-    line-height: 150%;
-  }
-
-  .about-me strong {
-    font-size: 2.8rem;
-  }
-
-  .title {
+   .title {
     flex-basis: 90%;
-    /* font-size: 3.8rem; */
-  }
+   }
 }

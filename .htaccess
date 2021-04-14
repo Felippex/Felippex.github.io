@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "restricted area"
-AuthUserFile /c/Users/Bartek/GitRepo/Felippex.github.io/.htpasswd
-require valid-user
