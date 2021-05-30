@@ -179,31 +179,40 @@ html {
 }
 
 .courses__single-course {
-  border: 2px solid yellow;
+  border: 3px ridge #bbb;
+  display: flex;
+  flex-direction: column;
   font-size: calc(15px + 1.2vw);
   height: auto;
   margin: 20px auto;
   padding: 10px;
   position: relative;
-  flex-basis: calc(200px + 18vw);
-  min-height: 280px;
+  flex-basis: calc(220px + 15vw);
+  height: calc(220px + 15vw);
   
   }
 
 .courses__course-title {
 margin-bottom: calc(8px + 2vw);
 }
+.courses__course-title--dark-theme{
+  color: #444;
+  font-weight: bold;
+}
 
 .courses__course-date,
 .courses__course-organizer{
   color: #999;
-  font-size: calc(10px + 1.2vw);
+  font-size: calc(10px + 1vw);
 }
 .courses__course-organizer{
   margin-bottom: calc(4px + 2vw);
 }
 .courses__logo{
-  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
   }
 .courses__organizer-logo {
   width: calc(70px + 5vw);
