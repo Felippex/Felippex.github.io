@@ -168,8 +168,13 @@ html {
 /* ----- courses section ----- */
 
 .courses {
-  background-color: #8EE600;
+  background-image: url(../img/pattern2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 30px;
+  }
+  .courses__title{
+    color: #fff;
   }
 
 .courses__courses-set{
@@ -179,10 +184,12 @@ html {
 }
 
 .courses__single-course {
+  background-image: url(../img/pattern4.jpg);
+  background-size: cover;
   border: 3px ridge #bbb;
   display: flex;
   flex-direction: column;
-  font-size: calc(15px + 1.2vw);
+  font-size: calc(15px + 1vw);
   height: auto;
   margin: 20px auto;
   padding: 10px;
@@ -196,13 +203,13 @@ html {
 margin-bottom: calc(8px + 2vw);
 }
 .courses__course-title--dark-theme{
-  color: #444;
+  color: #333;
   font-weight: bold;
 }
 
 .courses__course-date,
 .courses__course-organizer{
-  color: #999;
+  color: #666;
   font-size: calc(10px + 1vw);
 }
 .courses__course-organizer{
@@ -217,11 +224,14 @@ margin-bottom: calc(8px + 2vw);
 .courses__organizer-logo {
   width: calc(70px + 5vw);
 }
+.courses__organizer-logo--bigger{
+  width: calc(150px + 5vw);
+}
 
 /* ----- abilities ----- */
 
 .abilities {
-  background-color: #1753E6;
+  background-color: #9400ff;
   margin: 0px auto;
   padding: 50px 0;
 }
@@ -238,8 +248,9 @@ margin-bottom: calc(8px + 2vw);
 }
 
 .abilities__skill {
-  width: 70px;
-  margin: 10px;
+  width: calc(60px + 5vw);
+  max-width: 110px;
+  margin: calc(15px + 1.2vw);
 }
 
 /* ------ education ------ */
@@ -303,7 +314,6 @@ margin-bottom: calc(8px + 2vw);
   width: 250px;
   height: 250px;
   background-size: cover;
-  /* margin: 0 auto 50px auto; */
   margin: 0 10px 50px 0;
   border-radius: 5%;
   border: 5px solid black;
@@ -339,10 +349,6 @@ footer {
   .projects__project {
    width: 350px;
   }
-
-  .activities .single-course .organizer-logo {
-    width: 95px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -366,15 +372,7 @@ footer {
     font-size: 12px;
   }
 
-  .activities .single-course .organizer-logo {
-    width: 130px;
   }
-
-  .activities .single-course:nth-last-of-type(1) .organizer-logo {
-    width: 170px;
-  }
-
-}
 
 @media (min-width: 1024px) {
 
